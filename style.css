@@ -1,0 +1,28 @@
+h1 {
+    /* Give the container a display of flex */
+    display: flex;
+
+    /* Set the direction to be row */
+    flex-direction: row;
+
+    /* Center the content in the middle */
+    justify-content: center;
+    
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+#Juan {
+    height: 25em;
+}
+
+.fontsize {
+    font-size: 1.5em;
+}
+
+.background {
+    background-color:gainsboro;
+}
