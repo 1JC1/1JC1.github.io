@@ -1,0 +1,32 @@
+#button {
+    background: white;
+    padding: 30px 60px;
+    font-size: 35px;
+    border-radius: 10px;
+    border: 5px solid white;
+  }
+  
+  #button:hover {
+    background-color: lime;
+    cursor: pointer;
+  }
+  
+  #title {
+    text-align: center;
+    color: white;
+  }
+  
+  .everything {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    gap: 5vh;
+    font-family: sans-serif;
+  }
+
+  #body {
+    background: #38383b;
+  }

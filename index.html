@@ -1,23 +1,98 @@
-<html>
-    <head>
-        <title>Juan's Website</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <h1>Juan Rodriguez</h1>
-        <p class="fontsize">Welcome to my personal website!</p>
-        <div id="Juan">
-            <img src="images/JuanRodriguez.jpg" alt="Headshot of Juan" id="Juan"/>
-        </div>
-        <div class="background">
-            <h2>Follow me on:</h2>
-            <ul>
-                <li>
-                    <a href="https://www.linkedin.com/in/1juan-rodriguez1/" class="fontsize">
-                        LinkedIn
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </body>
+<!doctype html>
+<html lang="en">
+
+<!--
+WRITTEN BY: Juan Rodriguez
+EMAIL: jcrodri6@uci.edu
+-->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Juan Rodriguez">
+  <meta name="description" content="Personal Portfolio">
+
+  <link rel="stylesheet" href="style.css" />
+  <!-- <script src="script.js" defer></script> -->
+
+  <title>Juan's Portfolio</title>
+</head>
+<body id="body">
+    
+  <div id="nav">
+    <button>
+    </button>
+    <button class="nav-button" onclick="document.getElementById('home').scrollIntoView();">
+      Home
+    </button>
+    <button class="nav-button" onclick="document.getElementById('about').scrollIntoView();">
+      About
+    </button>
+    <button class="nav-button" onclick="document.getElementById('projects').scrollIntoView();">
+      Projects
+    </button>
+    <a href="Juan_Rodriguez_Resume.pdf" target="_blank">
+      <button class="nav-button">
+        Resume
+      </button>
+    </a>
+    <a href="mystery.html">
+      <button class="nav-button">
+        ?
+      </button>
+    </a>
+
+  </div>
+  
+  <div id="home" class="color1">
+    <p class="hello">
+      $ Hi, my name is
+    </p>
+    <div class="container">
+      <div class="typed-out">
+        $ Juan Rodriguez
+      </div>
+    </div>
+  </div>
+  
+  <div id="about">
+    <div id="about-me">
+      <p class="title">
+        About Me:
+      </p>
+      <br>
+      <p>
+        My name is Juan Rodriguez and I am third year student at the University of California, Irvine. I am currently persuing a Bachelors in Computer Science with a specialization in Information.
+      </p>
+    </div>
+    <img src="Media/Juan.jpg" id="Juan" alt="Image of author, Juan Rodriguez">
+  </div>
+  <div id="projects">
+    <p class="title">
+      Projects:
+    </p>
+    <a href="https://github.com/1JC1/Memory-Game">
+      <img src="Media/memory_game.png" id="game" alt="Screen shot of game webpage">
+    </a>
+    <p class="project-description">
+      About the Project: In this project I created a website for a sound and memory game
+      ● Code was written on Glitch and the project was then stored on a GitHub repository
+      ● Utilized JavaScript for the memory, sound, and visual mechanics of the game
+      ● Used HTML to structure and write the content on the game, and CSS to style all of its components
+    </p>
+  </div>
+  
+  <footer class="footer">
+    <p class="color1">
+      Connect with me on:
+    </p>
+    <a href="https://www.linkedin.com/in/1juan-rodriguez1/" target="_blank">
+      <img src="Media/linkedin.png" class="logo" alt="LinkedIn Logo">
+    </a>
+    <a href="https://github.com/1JC1" target="_blank">
+      <img src="Media/github.png" class="logo" alt="GitHub Logo">
+    </a>
+  </footer>
+  
+</body>
+
 </html>

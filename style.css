@@ -1,28 +1,153 @@
-h1 {
-    /* Give the container a display of flex */
-    display: flex;
-
-    /* Set the direction to be row */
-    flex-direction: row;
-
-    /* Center the content in the middle */
-    justify-content: center;
-    
-    font-size: 3em;
+html {
+  scroll-behavior: smooth;
 }
 
-h2 {
-    font-size: 2em;
+#body {
+  background: #38383b;
+  font-family: sans-serif;
+}
+
+#home {
+  background: #38383b;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+#about {
+  background: #38383b;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#projects {
+  background: #38383b;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#nav {
+  background: rgba(56, 56, 59, 0.5);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  position: sticky;
+  top: 0px;
+}
+
+.nav-button {
+  height: 3em;
+  width: 6em;
+  font-size: 3vh;
+}
+
+.nav-button:hover {
+  background: lime;
+  color: black;
+}
+
+button {
+  background: none;
+	color: white;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.footer {
+  position: sticky;
+  bottom: 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background: rgba(56, 56, 59, 0.5);
+  justify-content: center;
+  gap: 2em;
+}
+
+.color1 {
+  color: white;
+}
+
+.hello {
+  font-size: 5vh;
+  position: absolute;
+  top: 35vh;
+  left: 13vw;
+}
+
+.container{
+  display: inline-block;
+}
+.typed-out{
+  color: lime;
+  overflow: hidden;
+  border-right: .15em solid lime;
+  white-space: nowrap;
+  animation: 
+  typing 1.5s steps(20, end) forwards, blinking .8s infinite;
+  font-size: 8vh;
+  width: 0;
+  position: relative;
+  top: 40vh;
+  left: 12vw;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 8em }
+}
+
+@keyframes blinking {
+  from { border-color: transparent }
+  to { border-color: lime; }
 }
 
 #Juan {
-    height: 25em;
+  position: relative;
+  height: 40vh;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 3px;
+  border-color: white;
 }
 
-.fontsize {
-    font-size: 1.5em;
+#about-me {
+  width: 30vw;
+  color: white;
+  font-size: 2.5vh;
 }
 
-.background {
-    background-color:gainsboro;
+.title {
+  font-size: 6vh;
+  border-bottom:solid green 4px;
+  width: 5em;
+  color: white;
+}
+
+.logo {
+  height: 5vh;
+}
+
+#game {
+  height: 50vh;
+}
+
+.project-description {
+  width: 50vw;
+  color: white;
+  font-size: 2.5vh;
 }
